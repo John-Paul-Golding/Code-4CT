@@ -1,0 +1,705 @@
+/* All css styles here */
+/* adding some font styles here */
+@import url('https://fonts.googleapis.com/css?family=Tajawal');
+@import url('https://fonts.googleapis.com/css?family=Lato');
+html{
+  scroll-behavior: smooth;
+
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header_logo{
+  float: left;
+  width: 115px;
+  height: 65px;
+  margin-left: 2%;
+}
+
+.topnav {
+  overflow: hidden;
+  position: static;
+  z-index: 1;
+  background-color: white;
+  text-align: center;
+  width: 100%;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #E59085;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  margin-left: 5%;
+  margin-top: 2%;
+}
+
+.topnav a:hover {
+  background-color:  #E59085;
+  color: black;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+.topnav .search-container {
+  float: right;
+  margin-top: 2%;
+  margin-right: 2%;
+}
+
+.topnav input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  margin-right: -17%;
+  font-size: 17px;
+  border: none;
+  width: 70%;
+}
+
+.topnav .search-container button {
+  float: right;
+  padding: 6px 6px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.topnav .search-container button:hover {
+  background: #ccc;
+}
+
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+  }
+
+/* homepage image styles */
+#slide_container{
+  width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+.homepage_image{
+  width: 80%;
+  height: 640px;
+}
+
+/* The slide circle dots */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #E59085;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active{
+  background-color: #bbb;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/*styling the text block over the slide show images*/
+.container {
+position: relative;
+}
+
+
+.text-block{
+   position: absolute;
+   right: 10%;
+   left: 10%;
+   margin-top: -462px;
+   background-color: black;
+   opacity: 0.55;
+   color: white;
+   padding-left: 20px;
+   padding-right: 20px;
+   font-family: 'Tajawal', sans-serif;
+   font-size: 20px;
+}
+
+/*The Who We Are section styles*/
+.Who_Are_WE{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-template-rows: 1fr;
+  grid-gap: 2px;
+
+  border: 2px solid;
+  height: 100%;
+}
+
+.Who_Are_WE h3{
+  margin-left: 5%;
+}
+
+.Who_Are_WE p{
+  margin-left: 5%;
+}
+
+.section_wrapper{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-template-rows: auto auto;
+  grid-gap: 2px;
+  height: 100%;
+  padding-bottom: 19%;
+}
+
+.section_image{
+  height: 100%;
+  width: 60%;
+  margin-left: 8%;
+}
+
+
+
+/*Styling my read more button*/
+#text{
+    display:none;
+}
+
+.btn-container{
+  margin: auto;
+  height:44px;
+  width: 166.23px;
+}
+
+button{
+  /* user-select:none;
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  -ms-user-select:none; */
+  cursor:pointer;
+  border:none;
+  padding:8px;
+  margin-left: 5%;
+  font-size:20px;
+  /* background:linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%); */
+  color:white;
+}
+
+
+/* Icons section styles */
+.icon_wrapper{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-template-rows: 1fr;
+  grid-gap: 2px;
+}
+
+.icon_heading{
+  font-family: 'Lato', sans-serif;
+  font-size: 20px;
+  text-align: center;
+}
+
+.icon_image{
+  height: 52%;
+  width: 50%;
+  margin-left: 20%;
+}
+
+.icon{
+  height: 100%;
+}
+
+.icon p{
+  text-align: center;
+}
+
+/*homepage portfolio styles*/
+.portfolio{
+  background-color: #E59085;
+  border: 2px solid white;
+}
+
+.portfolio h3{
+  font-family: 'Lato', sans-serif;
+  font-size: 20px;
+  text-align: center;
+}
+
+.portfolio p{
+  text-align: center;
+}
+
+#portfolio{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-template-rows: 1fr;
+  grid-gap: 5px;
+  border: 2px solid black;
+}
+
+.portfolio_grid{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-template-rows: repeat(2,1fr);
+  grid-gap: 5px;
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+
+.portfolio_image{
+  height: 100%;
+  width: 60%;
+  margin-left: 10%;
+  border: 2px solid black;
+}
+
+/* styling the fast company image */
+.fast_company_image{
+  height: 97%;
+  border: 2px solid black;
+  margin-top: 0.5%;
+}
+
+/*Adding a overlay to my portfolio images*/
+.portfolio_container {
+  position: relative;
+  width: 100%;
+  display: block;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 10%;
+  right: 0;
+  height: 100%;
+  width: 60%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: black;
+}
+
+.portfolio_container:hover .overlay {
+  opacity: 0.85;
+}
+
+.text {
+  color: #E59085;
+  font-size: 12px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-60%, -60%);
+  text-align: center;
+}
+
+/* Meet the team section styles */
+.MeetOurTeam_container{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-template-rows: repeat(2,1fr);
+  grid-gap: 5px;
+}
+
+.core_team{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-template-rows: 1fr;
+}
+
+.team_bio{
+  text-align: center;
+}
+
+#emma_dicks{
+  margin-left: 5%;
+}
+
+#andrea_petersen{
+  margin-left: 5%;
+}
+
+#tegan_crous{
+  margin-left: 5%;
+}
+
+#tracy-anne_sikenjana{
+  margin-left: 5%;
+}
+
+/* Countup timer */
+.timer{
+  display: grid;
+  grid-template-rows: 1fr;
+  background-color: #e38f84;
+  border: none;
+  text-align: center;
+  color: white;
+  /* height: 100%;
+  width: 100%; */
+}
+
+.countup{
+  margin-top: 50px;
+  font-size: 22px;
+}
+
+.counter{
+  border-top: 2px solid black;
+  width: 20px;
+  margin-left: 154px;
+}
+
+.counterTerm {
+  margin-top: -5px;
+  font-size: 18px
+}
+
+/*subscribe section styles*/ /*to be visited again*/
+#subscribe{
+  background-color: #E59085;
+  text-align: center;
+  width: 99.6%;
+  border: 2px solid black;
+  padding: 0%;
+}
+
+/* logo carousel styles */
+.carousel_wrapper{
+  overflow: hidden;
+}
+
+.logo_carousel{
+  background-image: url(../images/carousal.png);
+  background-repeat: repeat-x;
+  background-size: 100% 150px;
+  height: 150px;
+  width: 5076px;
+  animation: slide 80s linear infinite;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+@keyframes slide{
+  0%{
+    transform: translate3d(0,0,0);
+  }
+  100%{
+    transform: translate3d(-3172px,0,0);
+  }
+}
+
+/* first footer style */
+.first_footer{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: 1fr;
+  grid-gap: 10px;
+
+  border: 2px solid black;
+  background-color: #eee;
+  width: 99.5%;
+}
+
+.contact_us{
+  margin-left: 5%;
+}
+
+.contact_us h3{
+  text-align: center;
+}
+
+.company h3{
+  text-align: center;
+}
+
+.help{
+  width: 100%;
+  padding: 0;
+}
+
+.help h3{
+  text-align: center;
+}
+
+/* second footer styles */
+.second_footer{
+  background-color: #E59085;
+  height: 30%;
+}
+
+.second_footer p{
+  color: white;
+  font-size: 20px;
+  text-align: center;
+}
+
+#myBtn{
+  cursor:pointer;
+  border:none;
+  padding:8px;
+  margin-left: 95%;
+  font-size:20px;
+}
+
+
+
+/* Responsive web design */
+/* mobile first */
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: inline-block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: center;
+  }
+
+  html{
+    scroll-behavior: smooth;
+  }
+
+  .header_logo{
+    float: left;
+    width: 111px;
+    height: 59px;
+    margin-left: 2%;
+  }
+
+  .text {
+    font-size: 11px;
+    position: absolute;
+    margin-bottom: 60%;
+  }
+
+  #slide_container{
+    width: 100%;
+    /* margin-top: 50%; */
+  }
+
+  .homepage_image{
+    width: 80%;
+    height: 300px;
+    margin-top: 18px;
+  }
+
+  .text-block{
+     position: absolute;
+     right: 15%;
+     left: 15%;
+     margin-top: -86%;
+     background-color: black;
+     opacity: 0.55;
+     color: white;
+     padding-left: 24px;
+     padding-right: 20px;
+     font-family: 'Tajawal', sans-serif;
+     font-size: 16px;
+  }
+
+  .Who_Are_WE{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2,1fr);
+    grid-gap: 2px;
+
+    border: 2px solid;
+    height: 100%;
+  }
+
+  .section_wrapper{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2,1fr);
+    grid-gap: 2px;
+    height: 100%;
+    padding-bottom: 19%;
+  }
+  .section_image{
+    height: 77%;
+    width: 60%;
+    margin-left: 10%;
+  }
+
+  .icon_wrapper{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4,1fr);
+  }
+
+  .portfolio{
+    background-color: #E59085;
+    border: 2px solid white;
+  }
+
+  .portfolio h3{
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .portfolio p{
+    text-align: center;
+  }
+
+  #portfolio{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2,1fr);
+    grid-gap: 5px;
+    border: 2px solid black;
+  }
+
+  .fast_company_image{
+    height: 97%;
+    width: 90%;
+    border: 2px solid black;
+    margin-top: 0.5%;
+    margin-left: 3%;
+  }
+
+.MeetOurTeam_container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(1fr);
+    grid-gap: 5px;
+}
+
+.core_team{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2,1fr);
+}
+
+#emma_dicks{
+  margin-left: 3%;
+}
+
+#andrea_petersen{
+  margin-left: 3%;
+}
+
+#tegan_crous{
+  margin-left: 3%;
+}
+
+#tracy-anne_sikenjana{
+  margin-left: 3%;
+}
+
+.timer{
+  display: grid;
+  grid-template-rows: 1fr;
+  background-color: #e38f84;
+  border: none;
+  text-align: center;
+  color: white;
+}
+
+.countup{
+  margin-top: 50px;
+  font-size: 22px;
+}
+
+.counter{
+  border-top: 2px solid black;
+  width: 20px;
+  margin-left: 12px;
+}
+
+.counterTerm {
+  margin-top: -5px;
+  font-size: 18px
+}
+
+#subscribe{
+  background-color: #E59085;
+  text-align: center;
+  width: 99%;
+  border: 2px solid black;
+}
+
+.first_footer{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3,1fr);
+
+  border: 2px solid black;
+  background-color: #eee;
+  width: 99%;
+  /* margin: 0%; */
+}
+
+.company ul, li{
+  margin-left: 8%;
+}
+
+.help ul, li{
+  margin-left: 8%;
+}
+
+.help h3{
+  text-align: center;
+  width: 68%;
+}
+
+ul{
+  padding: 0;
+}
+
+#myBtn{
+    cursor: pointer;
+    border: none;
+    padding: 8px;
+    margin-left: 85%;
+    font-size: 20px;
+    /* background: linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%); */
+    color: white;
+}
+
+
+  }
